@@ -17,7 +17,6 @@ class Solution:
                 total += keys[as_list[0]]
                 break;
             else:
-                print('----', len(as_list))
                 if keys[as_list[0]] >= keys[as_list[1]]:
                     total += keys[as_list[0]]
                     as_list.pop(0)
