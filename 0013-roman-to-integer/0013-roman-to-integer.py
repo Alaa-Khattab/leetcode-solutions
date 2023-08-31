@@ -15,17 +15,14 @@ class Solution:
             
             if len(as_list) == 1:
                 total += keys[as_list[0]]
-                print('11111', total)
                 break;
             else:
                 print('----', len(as_list))
                 if keys[as_list[0]] >= keys[as_list[1]]:
                     total += keys[as_list[0]]
-                    print('2222', total)
                     as_list.pop(0)
                 else:
                     total = total +   (keys[as_list[1]] - keys[as_list[0]])
-                    print('33333', total)
                     as_list.pop(0)
                     as_list.pop(0)
                     
